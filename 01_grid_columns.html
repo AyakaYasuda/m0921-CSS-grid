@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Grid Columns</title>
+  </head>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: 200px 1fr 1fr;
+      /* grid-template-columns: auto auto auto; */
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 0.5rem;
+      row-gap: 1rem;
+    }
+
+    .item {
+      padding: 3rem;
+      background-color: rgb(168, 164, 164);
+      border: 3px solid #ccc;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 1rem;
+    }
+  </style>
+  <body>
+    <!-- <div class="grid">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+    </div> -->
+
+    <main>
+      <section>
+        <h3>Welcome</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nihil fuga
+          tempore quibusdam incidunt quaerat impedit non nostrum aut sint.
+        </p>
+      </section>
+      <aside>
+        <h3>Contact Us</h3>
+        <ul>
+          <li>News</li>
+          <li>Address</li>
+          <li>Email</li>
+          <li>Phone</li>
+        </ul>
+      </aside>
+    </main>
+  </body>
+</html>
